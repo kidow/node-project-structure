@@ -1,9 +1,20 @@
 'use strict'
 
+import { uuid } from '../utils/uuid'
+
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define(
     'User',
     {
+      uuid: {
+        allowNull: false,
+        unique: true,
+        type: 'BINARY(16)',
+        defaultValue: () => Buffer.from(uuid(), 'hex'),
+        get: function() {
+          return Buffer.from(this.getDataValue('uuid')).toString('hex')
+        }
+      },
       email: {
         allowNull: false,
         unique: true,
@@ -28,6 +39,16 @@ module.exports = (sequelize, DataTypes) => {
   }
 
   // hooks
+
+  // print
+  User.prototype.toWeb = function() {
+    const values = Object.assign({}, this.get())
+
+    delete values.id
+    delete values.password
+
+    return values
+  }
 
   return User
 }
