@@ -6,7 +6,7 @@ import cookieParser from 'cookie-parser'
 import logger from 'morgan'
 import response from './utils/response'
 import v1Route from './routes/v1'
-// import indexRouter from './routes'
+import jwtMiddleware from './middlewares/jwt.middleware'
 
 const app = express()
 
@@ -14,8 +14,8 @@ app.use(logger('dev'))
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(cookieParser())
+app.use(jwtMiddleware)
 app.use('/v1', v1Route)
-// app.use('/', indexRouter)
 
 app.use((req, res, next) => next(createError(404)))
 
@@ -34,11 +34,6 @@ app.use((err, req, res, next) => {
     },
     apiError.status
   )
-
-  // res.locals.message = err.message
-  // res.locals.error = process.env.NODE_ENV === 'development' ? err : {}
-
-  // res.status(err.status || 500).json(res.locals.error)
 })
 
 module.exports = app
