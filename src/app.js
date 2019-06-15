@@ -4,6 +4,7 @@ import createError from 'http-errors'
 import express from 'express'
 import cookieParser from 'cookie-parser'
 import logger from 'morgan'
+import response from './utils/response'
 import v1Route from './routes/v1'
 // import indexRouter from './routes'
 
@@ -26,7 +27,13 @@ app.use((err, req, res, next) => {
   res.locals.message = apiError.message
   res.locals.error = process.env.NODE_ENV === 'development' ? apiError : {}
 
-  res.status(apiError.status).json({ message: apiError.message })
+  return response(
+    res,
+    {
+      message: apiError.message
+    },
+    apiError.status
+  )
 
   // res.locals.message = err.message
   // res.locals.error = process.env.NODE_ENV === 'development' ? err : {}
