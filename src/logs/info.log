@@ -22,3 +22,5 @@
 {"message":"::ffff:127.0.0.1 - - [16/Jun/2019:07:24:56 +0000] \"POST /v1/auth/login HTTP/1.1\" 500 2383 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
 {"message":"::ffff:127.0.0.1 - - [16/Jun/2019:07:24:57 +0000] \"POST /v1/auth/login HTTP/1.1\" 500 2383 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
 {"message":"::ffff:127.0.0.1 - - [16/Jun/2019:07:24:57 +0000] \"GET /v1/auth/tokenTest HTTP/1.1\" 500 2187 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [16/Jun/2019:07:32:24 +0000] \"GET /v1/error HTTP/1.1\" 404 48 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [16/Jun/2019:07:36:15 +0000] \"GET /v1/error HTTP/1.1\" 404 48 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}

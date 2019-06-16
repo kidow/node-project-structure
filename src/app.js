@@ -9,6 +9,12 @@ import v1Route from './routes/v1'
 import jwtMiddleware from './middlewares/jwt.middleware'
 import { stream } from './configs/winston'
 
+if (process.env.NODE_ENV === 'production') {
+  const sentry = require('@sentry/node')
+  sentry.init({ dsn: process.env.SENTRY_DSN })
+  app.use(sentry.Handlers.errorHandler())
+}
+
 const app = express()
 
 app.use(morgan('combined', { stream }))
