@@ -4,7 +4,7 @@ import request from 'supertest'
 import randomString from 'random-string'
 import models from '../../../models'
 import jwt from 'jsonwebtoken'
-import userRepo from '../../../repositories/user.repository'
+import UserRepo from '../../../repositories/user.repository'
 
 const app = require('../../../app')
 
@@ -21,6 +21,7 @@ describe('로그인 테스트', () => {
     }
 
     // 테스트용 사용자 생성
+    const userRepo = new UserRepo()
     await userRepo.store(userData)
   })
 
@@ -38,6 +39,7 @@ describe('로그인 테스트', () => {
     const payload = jwt.verify(response.body.data.token, process.env.JWT_SECRET)
     expect(userData.email).toBe(payload.email)
 
+    const userRepo = new UserRepo()
     const user = await userRepo.find(payload.uuid)
     expect(userData.email).toBe(user.email)
 
