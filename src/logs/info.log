@@ -24,3 +24,10 @@
 {"message":"::ffff:127.0.0.1 - - [16/Jun/2019:07:24:57 +0000] \"GET /v1/auth/tokenTest HTTP/1.1\" 500 2187 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
 {"message":"::ffff:127.0.0.1 - - [16/Jun/2019:07:32:24 +0000] \"GET /v1/error HTTP/1.1\" 404 48 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}
 {"message":"::ffff:127.0.0.1 - - [16/Jun/2019:07:36:15 +0000] \"GET /v1/error HTTP/1.1\" 404 48 \"-\" \"PostmanRuntime/7.6.0\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [16/Jun/2019:12:23:46 +0000] \"POST /v1/auth/login HTTP/1.1\" 200 257 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [16/Jun/2019:12:23:46 +0000] \"POST /v1/auth/login HTTP/1.1\" 500 2383 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [16/Jun/2019:12:23:46 +0000] \"GET /v1/users HTTP/1.1\" 200 925 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [16/Jun/2019:12:23:46 +0000] \"POST /v1/auth/login HTTP/1.1\" 500 2383 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [16/Jun/2019:12:23:47 +0000] \"GET /v1/users/4e35e9fc60f349c28ec6c89b7e105d1d HTTP/1.1\" 200 230 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [16/Jun/2019:12:23:47 +0000] \"GET /v1/auth/tokenTest HTTP/1.1\" 200 254 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
+{"message":"::ffff:127.0.0.1 - - [16/Jun/2019:12:23:47 +0000] \"GET /v1/users/4d16eb23f14bf8d2a45c095aabc30f1b HTTP/1.1\" 500 1938 \"-\" \"node-superagent/3.8.3\"\n","level":"info"}
