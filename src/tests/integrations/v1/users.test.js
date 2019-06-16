@@ -40,7 +40,7 @@ describe('GET: /v1/users', () => {
 
   test('잘못된 uuid 로 사용자 조회. | 404', async () => {
     let response = await request(app).get(`/v1/users/${uuid()}`)
-
+    console.log(response.statusCode)
     expect(response.statusCode).toBe(404)
   })
 })

@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1560667907586" clover="3.2.0">
-  <project timestamp="1560667907586" name="All files">
-    <metrics statements="172" coveredstatements="143" conditionals="54" coveredconditionals="36" methods="39" coveredmethods="33" elements="265" coveredelements="212" complexity="0" loc="172" ncloc="172" packages="10" files="16" classes="16"/>
+<coverage generated="1560669897765" clover="3.2.0">
+  <project timestamp="1560669897765" name="All files">
+    <metrics statements="184" coveredstatements="149" conditionals="56" coveredconditionals="36" methods="40" coveredmethods="34" elements="280" coveredelements="219" complexity="0" loc="184" ncloc="184" packages="10" files="17" classes="17"/>
     <package name="src">
-      <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="1"/>
+      <metrics statements="19" coveredstatements="16" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="1"/>
       <file name="app.js" path="/Users/dongwook-kim/dev/projects/gangmom/restapi/src/app.js">
-        <metrics statements="16" coveredstatements="16" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="1"/>
+        <metrics statements="19" coveredstatements="16" conditionals="4" coveredconditionals="2" methods="2" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
-        <line num="11" count="2" type="stmt"/>
-        <line num="13" count="2" type="stmt"/>
+        <line num="12" count="2" type="stmt"/>
         <line num="14" count="2" type="stmt"/>
         <line num="15" count="2" type="stmt"/>
         <line num="16" count="2" type="stmt"/>
         <line num="17" count="2" type="stmt"/>
         <line num="18" count="2" type="stmt"/>
-        <line num="20" count="2" type="stmt"/>
-        <line num="22" count="2" type="stmt"/>
-        <line num="23" count="3" type="stmt"/>
-        <line num="25" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="27" count="3" type="stmt"/>
-        <line num="28" count="3" type="cond" truecount="1" falsecount="1"/>
-        <line num="30" count="3" type="stmt"/>
-        <line num="39" count="2" type="stmt"/>
+        <line num="19" count="2" type="stmt"/>
+        <line num="21" count="2" type="stmt"/>
+        <line num="23" count="2" type="stmt"/>
+        <line num="24" count="4" type="stmt"/>
+        <line num="26" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="28" count="4" type="cond" truecount="1" falsecount="1"/>
+        <line num="29" count="4" type="stmt"/>
+        <line num="44" count="4" type="stmt"/>
+        <line num="46" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
+        <line num="50" count="0" type="stmt"/>
+        <line num="59" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.caches">
@@ -56,7 +59,7 @@
       </file>
     </package>
     <package name="src.configs">
-      <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
+      <metrics statements="12" coveredstatements="11" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="sequelize.js" path="/Users/dongwook-kim/dev/projects/gangmom/restapi/src/configs/sequelize.js">
         <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="0" coveredmethods="0"/>
         <line num="1" count="3" type="stmt"/>
@@ -64,11 +67,22 @@
         <line num="5" count="3" type="stmt"/>
         <line num="23" count="3" type="stmt"/>
       </file>
+      <file name="winston.js" path="/Users/dongwook-kim/dev/projects/gangmom/restapi/src/configs/winston.js">
+        <metrics statements="8" coveredstatements="7" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="6" count="2" type="cond" truecount="1" falsecount="1"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="10" count="2" type="stmt"/>
+        <line num="16" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="26" count="2" type="stmt"/>
+        <line num="28" count="7" type="stmt"/>
+      </file>
     </package>
     <package name="src.controllers.v1">
-      <metrics statements="30" coveredstatements="28" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
+      <metrics statements="31" coveredstatements="28" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
       <file name="auth.controller.js" path="/Users/dongwook-kim/dev/projects/gangmom/restapi/src/controllers/v1/auth.controller.js">
-        <metrics statements="19" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
+        <metrics statements="20" coveredstatements="17" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
         <line num="8" count="2" type="stmt"/>
         <line num="9" count="3" type="stmt"/>
         <line num="10" count="3" type="stmt"/>
@@ -87,7 +101,8 @@
         <line num="42" count="2" type="stmt"/>
         <line num="43" count="1" type="stmt"/>
         <line num="44" count="1" type="stmt"/>
-        <line num="46" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="47" count="0" type="stmt"/>
       </file>
       <file name="user.controller.js" path="/Users/dongwook-kim/dev/projects/gangmom/restapi/src/controllers/v1/user.controller.js">
         <metrics statements="11" coveredstatements="11" conditionals="4" coveredconditionals="4" methods="2" coveredmethods="2"/>
@@ -100,7 +115,7 @@
         <line num="12" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
+        <line num="19" count="3" type="stmt"/>
         <line num="22" count="1" type="stmt"/>
       </file>
     </package>
@@ -150,7 +165,7 @@
         <line num="7" count="3" type="stmt"/>
         <line num="8" count="3" type="stmt"/>
         <line num="15" count="4" type="stmt"/>
-        <line num="17" count="13" type="stmt"/>
+        <line num="17" count="12" type="stmt"/>
         <line num="39" count="3" type="stmt"/>
         <line num="44" count="3" type="stmt"/>
         <line num="45" count="4" type="cond" truecount="1" falsecount="1"/>
@@ -176,7 +191,7 @@
         <line num="12" count="3" type="stmt"/>
         <line num="13" count="3" type="stmt"/>
         <line num="17" count="1" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
+        <line num="18" count="3" type="stmt"/>
         <line num="22" count="4" type="stmt"/>
         <line num="24" count="4" type="cond" truecount="1" falsecount="1"/>
         <line num="26" count="4" type="stmt"/>
@@ -214,16 +229,16 @@
       </file>
     </package>
     <package name="src.utils">
-      <metrics statements="10" coveredstatements="10" conditionals="6" coveredconditionals="4" methods="2" coveredmethods="2"/>
+      <metrics statements="10" coveredstatements="9" conditionals="6" coveredconditionals="3" methods="2" coveredmethods="2"/>
       <file name="response.js" path="/Users/dongwook-kim/dev/projects/gangmom/restapi/src/utils/response.js">
-        <metrics statements="7" coveredstatements="7" conditionals="6" coveredconditionals="4" methods="1" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="6" conditionals="6" coveredconditionals="3" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
-        <line num="4" count="5" type="stmt"/>
-        <line num="8" count="5" type="cond" truecount="2" falsecount="0"/>
-        <line num="9" count="3" type="stmt"/>
-        <line num="12" count="5" type="cond" truecount="1" falsecount="1"/>
-        <line num="13" count="5" type="stmt"/>
-        <line num="21" count="5" type="stmt"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="8" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="9" count="0" type="stmt"/>
+        <line num="12" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
       </file>
       <file name="uuid.js" path="/Users/dongwook-kim/dev/projects/gangmom/restapi/src/utils/uuid.js">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
@@ -236,14 +251,14 @@
       <metrics statements="11" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="5" coveredmethods="4"/>
       <file name="index.js" path="/Users/dongwook-kim/dev/projects/gangmom/restapi/src/wrappers/index.js">
         <metrics statements="8" coveredstatements="7" conditionals="4" coveredconditionals="3" methods="4" coveredmethods="4"/>
-        <line num="3" count="12" type="cond" truecount="1" falsecount="1"/>
-        <line num="4" count="12" type="stmt"/>
+        <line num="3" count="11" type="cond" truecount="1" falsecount="1"/>
+        <line num="4" count="11" type="stmt"/>
         <line num="6" count="0" type="stmt"/>
-        <line num="11" count="14" type="cond" truecount="2" falsecount="0"/>
+        <line num="11" count="13" type="cond" truecount="2" falsecount="0"/>
         <line num="12" count="2" type="stmt"/>
-        <line num="15" count="12" type="stmt"/>
-        <line num="19" count="6" type="stmt"/>
-        <line num="23" count="5" type="stmt"/>
+        <line num="15" count="11" type="stmt"/>
+        <line num="19" count="4" type="stmt"/>
+        <line num="23" count="4" type="stmt"/>
       </file>
       <file name="user.wrapper.js" path="/Users/dongwook-kim/dev/projects/gangmom/restapi/src/wrappers/user.wrapper.js">
         <metrics statements="3" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
